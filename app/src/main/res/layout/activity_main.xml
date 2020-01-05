@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+            <ImageView
+                    android:id="@+id/imgSky"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/bg"
+                    android:scaleType="centerCrop" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="2">
+
+            <Button
+                    android:id="@+id/btnOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#ebe1dd"
+                    android:layout_weight="1"/>
+
+            <Button
+                    android:id="@+id/btnTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#eccbca"
+                    android:layout_weight="1"/>
+
+            <Button
+                    android:id="@+id/btnThree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#75839c"
+                    android:layout_weight="1"/>
+
+            <Button
+                    android:id="@+id/btnFour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#99a9bf"
+                    android:layout_weight="1"/>
+
+            <Button
+                    android:id="@+id/btnFive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#c3ccd5"
+                    android:layout_weight="1"/>
+
+            <Button
+                    android:id="@+id/btnSix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#dde2e5"
+                    android:layout_weight="1"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/tvColor"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#ebe1dd"
+            android:text="225-235-221"
+            android:textColor="#000"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="//RGB"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tvColor"
+            android:layout_alignLeft="@id/tvColor"/>
+
+</RelativeLayout>
+
+
